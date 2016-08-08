@@ -25,14 +25,14 @@ constraint chk_order check (
 	Order_no like '0%'));
 
 create table Sales_order_details (
-S_order_no varchar(6),
-Product_no varchar(6),
-Qty_order numeric(8),
-Qty_disp numeric(8),
-Product_rate numeric(10,2),
-primary key (S_order_no,Product_no),
-foreign key (S_order_no) references Orders(Order_no),
-foreign key (Product_no) references Product(Prod_no)
+  S_order_no varchar(6),
+  Product_no varchar(6),
+  Qty_order numeric(8),
+  Qty_disp numeric(8),
+  Product_rate numeric(10,2),
+  primary key (S_order_no,Product_no),
+  foreign key (S_order_no) references Orders(Order_no),
+  foreign key (Product_no) references Product(Prod_no)
 );
 
 insert into Salesman values
