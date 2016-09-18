@@ -1,6 +1,6 @@
-drop table if exists Customer cascade;
-drop table if exists Product cascade;
-drop table if exists Cust_prod cascade;
-drop table if exists Salesman cascade;
-drop table if exists Sales_order cascade;
-drop table if exists Orders cascade;
+drop table if exists customer cascade;
+drop table if exists product cascade;
+drop table if exists cust_prod cascade;
+drop table if exists salesman cascade;
+drop table if exists sales_order_details cascade;
+drop table if exists orders cascade;

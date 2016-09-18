@@ -1,31 +1,41 @@
-create table Customer (
-	Cus_no varchar(6) not null unique,
-	Name varchar(20),
-	Address1 varchar(30),
-	City varchar(15),
-	State varchar(15),
-	Pincode Integer,
-	Bal_due Decimal(10,2));
+create table customer (
+	cus_no varchar(6) not null unique,
+	name varchar(20),
+	address1 varchar(30),
+	city varchar(15),
+	state varchar(15),
+	pincode Integer,
+	bal_due Decimal(10,2),
+	primary key (Cus_no));
 
-insert into Customer values 
-	(0001,'Ivan','12,first street','Vellore','Tamil Nadu',632009,15000),
-	(0002,'Vandana','34, Second cross street','Bombay','Maharashtra',400057,0),
-	(0003,'Basu','78, Third street','Bombay','Maharashtra',400058,5000);
+insert into customer values 
+	('0001','Ivan','12,first street','Vellore','Tamil Nadu',632009,15000),
+	('0002','Vandana','34, Second cross street','Bombay','Maharashtra',400057,0),
+	('0003','Steven','87, Fourth street','Chennai','Tamil Nadu',400059,75000),
+	('1001','Phteven','25, Ninth Street','Chennai','Tamil Nadu',400058,5000);
 
-insert into Customer (Cus_no,Name,Address1,City,Pincode,Bal_due) values 
-	(0004,'Ravi','45,fourth street','Delhi',100001,10000);
+insert into customer (cus_no,name,address1,city,pincode,bal_due) values 
+	('0004','Ravi','45,fourth street','Delhi',100001,10000);
 
-create table Product (
-	Prod_no varchar(6) unique,
-	Descr varchar(20),
-	Unit_price Integer,
-	Qty_on_hand Integer,
-	Category varchar(10));
+create table product (
+	prod_no varchar(6) unique,
+	descr varchar(20),
+	unit_price Integer,
+	qty_on_hand Integer,
+	category varchar(10),
+	primary key (prod_no));
 
-create table Cust_prod (
-	Cust_no varchar(6),
-	Prod_no varchar(6),
-	No_of_items_purchased Integer,
-	Total_price Decimal(15,4),
-	Discount Integer,
-	Netamount Decimal(10,4));
+insert into product (prod_no, descr, unit_price, qty_on_hand, category) values
+	('0001', 'Moto G(4)', 13000, 100, 'phone'),
+	('1001', 'ThinkPad E450', 26000, 50, 'laptop'),
+	('0011', 'Mouse', 3900, 150, 'laptop+'),
+	('1011', 'XXX', 3900, 150, 'special');
+
+create table cust_prod (
+	cust_no varchar(6),
+	prod_no varchar(6),
+	no_of_items_purchased Integer,
+	total_price Decimal(15,4),
+	discount Integer,
+	netamount Decimal(10,4),
+	primary key (cust_no));
