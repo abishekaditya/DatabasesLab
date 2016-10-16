@@ -40,8 +40,8 @@ create table cust_prod (
 	netamount Decimal(10,4),
 	primary key (cust_no));
 
-insert into cust_prod_t5 values('001','0001','50','5000','2','10000');
-insert into cust_prod_t5 values('002','0002','30','3000','3','9000');
-insert into cust_prod_t5 values('003','0003','50','5000','2','10000');
-insert into cust_prod_t5 values('004','0004','60','15000','12','20000');
-insert into cust_prod_t5 values('005','0005','10','12000','8','15000');
+insert into cust_prod values('001','0001','50','5000','2','10000');
+insert into cust_prod values('002','0002','30','3000','3','9000');
+insert into cust_prod values('003','0003','50','5000','2','10000');
+insert into cust_prod values('004','0004','60','15000','12','20000');
+insert into cust_prod values('005','0005','10','12000','8','15000');
