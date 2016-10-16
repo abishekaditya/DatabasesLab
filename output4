@@ -1,0 +1,109 @@
+ order_no | days 
+----------+------
+ 019001   |    8
+ 019002   |    2
+ 016865   |    2
+ 019003   |    4
+ 046865   |    3
+(5 rows)
+
+ one_month_from_order 
+----------------------
+ 1996-02-12 00:00:00
+ 1996-02-25 00:00:00
+ 1996-03-18 00:00:00
+ 1996-05-03 00:00:00
+ 1996-05-04 00:00:00
+(5 rows)
+
+ delivery_month 
+----------------
+              1
+              1
+              2
+              4
+              4
+(5 rows)
+
+  upper  
+---------
+ IVAN
+ VANDANA
+ STEVEN
+ RAVI
+ PHTEVEN
+(5 rows)
+
+           rpad            
+---------------------------
+ Moto G(4)                
+ Mouse                    
+ XXX                      
+ ThinkPad E450            
+(4 rows)
+
+ substring 
+-----------
+ Iva
+ Van
+ Ste
+ Rav
+ Pht
+(5 rows)
+
+ max 
+-----
+   7
+(1 row)
+
+      to_char      
+-------------------
+ 20 January   1996
+ 27 January   1996
+ 20 February  1996
+ 07 April     1996
+ 07 April     1996
+(5 rows)
+
+UPDATE 2
+  to_char  
+-----------
+ Friday   
+ Thursday 
+ Sunday   
+ Wednesday
+ Thursday 
+(5 rows)
+
+ upper 
+-------
+ I
+ V
+ R
+ S
+ P
+(5 rows)
+
+ substring 
+-----------
+ van
+ andan
+ avi
+ taven
+ htave
+(5 rows)
+
+    date    
+------------
+ 2016-10-16
+(1 row)
+
+ sum 
+-----
+    
+(1 row)
+
+ prod_no | count 
+---------+-------
+(0 rows)
+

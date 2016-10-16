@@ -1,0 +1,110 @@
+  name   
+---------
+ Ivan
+ Vandana
+ Steven
+ Phteven
+ Ravi
+(5 rows)
+
+  name   |  city   
+---------+---------
+ Ivan    | Vellore
+ Vandana | Bombay
+ Steven  | Chennai
+ Phteven | Chennai
+ Ravi    | Delhi
+(5 rows)
+
+ prod_no |     descr     | unit_price | qty_on_hand | category 
+---------+---------------+------------+-------------+----------
+ 0001    | Moto G(4)     |      13000 |         100 | phone
+ 1001    | ThinkPad E450 |      26000 |          50 | laptop
+ 0011    | Mouse         |       3900 |         150 | laptop+
+ 1011    | XXX           |       3900 |         150 | special
+(4 rows)
+
+ cus_no |  name   |     address1      |  city   |   state    | pincode | bal_due  
+--------+---------+-------------------+---------+------------+---------+----------
+ 0003   | Steven  | 87, Fourth street | Chennai | Tamil Nadu |  400059 | 75000.00
+ 1001   | Phteven | 25, Ninth Street  | Chennai | Tamil Nadu |  400058 |  5000.00
+(2 rows)
+
+ cus_no |  name   |     address1     |  city   |   state    | pincode | bal_due 
+--------+---------+------------------+---------+------------+---------+---------
+ 1001   | Phteven | 25, Ninth Street | Chennai | Tamil Nadu |  400058 | 5000.00
+(1 row)
+
+ prod_no | descr | unit_price | qty_on_hand | category 
+---------+-------+------------+-------------+----------
+ 1011    | XXX   |       3900 |         150 | special
+(1 row)
+
+ prod_no |     descr     | unit_price | qty_on_hand | category 
+---------+---------------+------------+-------------+----------
+ 0001    | Moto G(4)     |      13000 |         100 | phone
+ 1001    | ThinkPad E450 |      26000 |          50 | laptop
+ 0011    | Mouse         |       3900 |         150 | laptop+
+ 1011    | XXX           |       3900 |         150 | special
+(4 rows)
+
+ cus_no |  name   |     address1      |  city   |   state    | pincode | bal_due  
+--------+---------+-------------------+---------+------------+---------+----------
+ 0003   | Steven  | 87, Fourth street | Chennai | Tamil Nadu |  400059 | 75000.00
+ 1001   | Phteven | 25, Ninth Street  | Chennai | Tamil Nadu |  400058 |  5000.00
+(2 rows)
+
+ prod_no | descr | unit_price | qty_on_hand | category 
+---------+-------+------------+-------------+----------
+ 0011    | Mouse |       3900 |         150 | laptop+
+ 1011    | XXX   |       3900 |         150 | special
+(2 rows)
+
+UPDATE 1
+DELETE 0
+UPDATE 1
+ cus_no |  name  |     address1      |  city   |   state    | pincode | bal_due  
+--------+--------+-------------------+---------+------------+---------+----------
+ 0003   | Steven | 87, Fourth street | Chennai | Tamil Nadu |  400059 | 75000.00
+(1 row)
+
+ cus_no |  name   |        address1         |  city  |    state    | pincode | bal_due  
+--------+---------+-------------------------+--------+-------------+---------+----------
+ 0002   | Vandana | 34, Second cross street | Bombay | Maharashtra |  400057 |     0.00
+ 0004   | Ravi    | 45,fourth street        | Delhi  |             |  100001 | 10000.00
+(2 rows)
+
+  name   
+---------
+ Ivan
+ Phteven
+ Ravi
+ Steven
+ Vandana
+(5 rows)
+
+ count 
+-------
+     4
+(1 row)
+
+          avg           
+------------------------
+ 11725.0000000000000000
+(1 row)
+
+  max  
+-------
+ 26100
+(1 row)
+
+ min  
+------
+ 3900
+(1 row)
+
+ count 
+-------
+     4
+(1 row)
+
