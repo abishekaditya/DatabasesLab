@@ -1,4 +1,10 @@
 select product_no, sum(qty_disp) from sales_order_details group by product_no;
 select product_no from sales_order_details group by product_no having sum(qty_disp) > 2;
-select orders.salesman_no, max(sum(sales_order_details.qty_disp)) from orders, sales_order_details where orders.order_no = sales_order_details.s_order_no group by orders.salesman_no;
+select orders.salesman_no, sum(sales_order_details.qty_disp) from orders, sales_order_details where orders.order_no = sales_order_details.s_order_no group by orders.salesman_no order by sum(sales_order_details.qty_disp) desc LIMIT 1;
 select cust_no, min(total_price), max(total_price), avg(total_price), sum(total_price) from cust_prod group by cust_no;
+select sum(total_price) from cust_prod where no_of_items_purchased > 5 group by cust_no;
+select orders.salesman_no from orders,salesman where salesman.salesman_name like 'A%';
+select prod_no from product except select distinct prod_no from cust_prod;
+select sum(no_of_items_purchased), product.descr from cust_prod, product group by product.prod_no;
+select sum(no_of_items_purchased)*unit_price as amount from cust_prod, product where cust_prod.prod_no = product.prod_no group by product.prod_no;
+select prod_no, sum(no_of_items_purchased) from cust_prod group by prod_no;
