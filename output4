@@ -5,7 +5,8 @@
  016865   |    2
  019003   |    4
  046865   |    3
-(5 rows)
+ 046875   |    3
+(6 rows)
 
  one_month_from_order 
 ----------------------
@@ -14,7 +15,8 @@
  1996-03-18 00:00:00
  1996-05-03 00:00:00
  1996-05-04 00:00:00
-(5 rows)
+ 1996-05-05 00:00:00
+(6 rows)
 
  delivery_month 
 ----------------
@@ -23,7 +25,8 @@
               2
               4
               4
-(5 rows)
+              4
+(6 rows)
 
   upper  
 ---------
@@ -63,7 +66,8 @@
  20 February  1996
  07 April     1996
  07 April     1996
-(5 rows)
+ 08 April     1996
+(6 rows)
 
 UPDATE 2
   to_char  
@@ -73,7 +77,8 @@ UPDATE 2
  Sunday   
  Wednesday
  Thursday 
-(5 rows)
+ Friday   
+(6 rows)
 
  upper 
 -------
@@ -98,12 +103,13 @@ UPDATE 2
  2016-10-16
 (1 row)
 
- sum 
------
-    
+  sum  
+-------
+ 46900
 (1 row)
 
- prod_no | count 
----------+-------
-(0 rows)
+ count 
+-------
+     4
+(1 row)
 

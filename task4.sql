@@ -11,5 +11,5 @@ select to_char(order_date, 'Day') from orders;
 select upper(substring(name from 1 for 1)) from customer;
 select substring(name from 2 for 5) from customer;
 select current_date;
-select sum(sales_order_details.qty_disp * sales_order_details.product_rate) from orders, sales_order_details where orders.order_status = 'fulfilled';
-select distinct product.prod_no, count(*) from product, orders, sales_order_details where sales_order_details.s_order_no = orders.order_no and product.prod_no = sales_order_details.product_no and orders.order_status = 'fulfilled' group by product.prod_no;
+select sum(unit_price) from orders, product where orders.order_status = 'fulfilled';
+select count(distinct(product_no)) from sales_order_details;
