@@ -1,0 +1,67 @@
+ prod_no | cust_no | name 
+---------+---------+------
+(0 rows)
+
+ prod_no | qty_order 
+---------+-----------
+ 0001    |         4
+ 1001    |         2
+ 0011    |         2
+ 0001    |        10
+ 1001    |         3
+ 1011    |        10
+ 0001    |         4
+(7 rows)
+
+ product_no |     descr     
+------------+---------------
+ 0001       | Moto G(4)
+ 1001       | ThinkPad E450
+ 0011       | Mouse
+ 0001       | Moto G(4)
+ 1001       | ThinkPad E450
+ 1011       | XXX
+ 0001       | Moto G(4)
+(7 rows)
+
+ name | descr 
+------+-------
+(0 rows)
+
+ cus_no | product_no | s_order_no | qty_order 
+--------+------------+------------+-----------
+(0 rows)
+
+ salesman_no | salesman_name | order_no | product_no | qty_order 
+-------------+---------------+----------+------------+-----------
+(0 rows)
+
+ salesman_no | salesman_name | order_no | product_no | qty_order 
+-------------+---------------+----------+------------+-----------
+ s00001      | Kiran         | 019001   | 0001       |         4
+ s00001      | Kiran         | 019001   | 1001       |         2
+ s00001      | Kiran         | 019001   | 0011       |         2
+ s00002      | Manish        | 019002   | 0001       |        10
+ s00001      | Kiran         | 046865   | 1001       |         3
+ s00001      | Kiran         | 046865   | 1011       |        10
+ s00001      | Kiran         | 019003   | 0001       |         4
+(7 rows)
+
+ order_no | client_no | salesman_no 
+----------+-----------+-------------
+ 019003   | 0004      | s00001
+ 046865   | 0004      | s00001
+ 046875   | 0004      | s00003
+(3 rows)
+
+ s_order_no |     descr     
+------------+---------------
+ 019001     | Moto G(4)
+ 019001     | Mouse
+ 019001     | ThinkPad E450
+(3 rows)
+
+ cust_no | name | prod_no | descr 
+---------+------+---------+-------
+(0 rows)
+

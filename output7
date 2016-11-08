@@ -1,0 +1,77 @@
+ product_no |   descr   
+------------+-----------
+ 0001       | Moto G(4)
+(1 row)
+
+ name | address1 | city | pincode 
+------+----------+------+---------
+(0 rows)
+
+  name   | order_date 
+---------+------------
+ Ivan    | 1996-01-12
+ Vandana | 1996-01-25
+ Staven  | 1996-02-18
+ Ravi    | 1996-04-03
+ Ravi    | 1996-04-04
+ Ravi    | 1996-04-05
+(6 rows)
+
+ descr | order_no | cus_no | name 
+-------+----------+--------+------
+(0 rows)
+
+  name   
+---------
+ Ivan
+ Ivan
+ Ivan
+ Vandana
+ Ravi
+ Ravi
+ Ravi
+(7 rows)
+
+ name | descr | qty_order 
+------+-------+-----------
+(0 rows)
+
+  name   | cus_no | salesman_no | salesman_name 
+---------+--------+-------------+---------------
+ Ivan    | 0001   | s00004      | Ashish
+ Ivan    | 0001   | s00001      | Kiran
+ Ivan    | 0001   | s00002      | Manish
+ Staven  | 0003   | s00002      | Manish
+ Phtaven | 1001   | s00002      | Manish
+ Ravi    | 0004   | s00001      | Kiran
+ Vandana | 0002   | s00004      | Ashish
+ Vandana | 0002   | s00001      | Kiran
+ Ravi    | 0004   | s00004      | Ashish
+ Staven  | 0003   | s00004      | Ashish
+ Vandana | 0002   | s00002      | Manish
+ Phtaven | 1001   | s00004      | Ashish
+ Staven  | 0003   | s00001      | Kiran
+ Ravi    | 0004   | s00002      | Manish
+ Phtaven | 1001   | s00001      | Kiran
+(15 rows)
+
+  name   | cus_no | salesman_no | salesman_name 
+---------+--------+-------------+---------------
+ Phtaven | 1001   | s00002      | Manish
+ Phtaven | 1001   | s00004      | Ashish
+ Phtaven | 1001   | s00001      | Kiran
+ Staven  | 0003   | s00002      | Manish
+ Staven  | 0003   | s00001      | Kiran
+ Staven  | 0003   | s00004      | Ashish
+(6 rows)
+
+ product_no |   descr   | unit_price | qty_on_hand 
+------------+-----------+------------+-------------
+ 0001       | Moto G(4) |      13000 |         100
+(1 row)
+
+ salesman_no | salesman_name | address  |  city  | state | pincode | sal_amt 
+-------------+---------------+----------+--------+-------+---------+---------
+ s00004      | Ashish        | A/5 Juhu | Bombay | Mah   |  400044 | 7000.00
+(1 row)
+
